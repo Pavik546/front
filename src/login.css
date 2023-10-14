@@ -1,0 +1,220 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container covers the entire viewport height */
+    margin: 0;
+    background: #000; /* Fallback background color (in case the image is unavailable) */
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/loginBack.png'); /* Add your image URL here */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    /* background: #FFF; */
+    /* filter: blur(100px); */
+  }
+  .signup-image{
+    background-image: url('./assets/signupback.png'); 
+  }
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF; /* Background color */
+    opacity: 0.4; /* Opacity */
+    filter: blur(50px); /* Blur effect */
+    z-index: 1; /* Make sure it's on top of other elements */
+}
+
+  
+  .login-form {
+    margin-left: 450px;
+    padding: 40px;
+    padding-top: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Ensure the form is above the background image */
+    /* Add any other form styles here */
+    border-radius: 30px;
+background: #F9F9F9;
+box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.30);
+width: 350px;
+height: 500px;
+flex-shrink: 0;
+  }
+  .logo2{
+    width: 200px;
+   
+  }
+
+  .logo-container{
+    text-align: center;
+
+  }
+  .line-below-logo{
+    background: #0D6EFD;
+    height: 1px;
+  }
+  .login-heading{
+    color: #282E36;
+font-family: 'Open Sans';
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center;
+margin-top: 30px;
+  }
+
+  .login-para{
+    color: #A1A1A1;
+font-family: 'Open Sans';
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+margin-top: 3px;
+  }
+.login-input{
+ border-radius: 20px;
+background: #FFF;
+border: none;
+background-image: url('./assets/username.png');
+background-size: 20px 20px; /* Adjust the image size as needed */
+  background-repeat: no-repeat;
+  background-position: 10px center; 
+box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+width: 90%;
+height: 50px;
+flex-shrink: 0;
+margin-top: 30px;
+transition: border-color 0.3s; /* Add a transition for smooth animation */
+border: 1px solid transparent;
+color: #63A9D7;
+font-family: 'Open Sans';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+padding-left: 40px;
+  }
+  .password{
+    background-image: url('./assets/password.png');
+
+  }
+  .login-input:focus {
+    border-color: #63A9D7; /* Change the border color when focused */
+    outline: none;
+  }
+
+  .login-input::placeholder{
+    color: #A1A1A1;
+font-family: 'Open Sans';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+  }
+  .login-input:focus::placeholder {
+    color: #63A9D7; /* Change the placeholder color when the input is focused */
+  }
+
+  .right{
+    text-align: end;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .login-button{
+    border-radius: 15px;
+background: #0D6EFD;
+width: 100%;
+height: 50px;
+flex-shrink: 0;
+border: none;
+color: #FFF;
+font-family: 'Open Sans';
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 40px;
+  }
+  .input-icon::before {
+    content: url('./assets/username.png'); /* Add the path to your icon image here */
+    margin-right: 4px; /* Adjust the spacing between the icon and the text */
+  }
+  
+.create{
+    font-size: 14px;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.signup{
+    height: 550px;
+    overflow-y: auto; 
+}
+.para{
+    margin-top: 40px;
+    font-size: 14px;
+}
+.create{
+    color: #000;
+
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-right: 10px;
+}
+.signup-input::placeholder{
+padding-left: 40px;
+}
+.signup-input{
+  padding-left: 100px;
+  border-radius: 20px;
+background: #FFF;
+border: none;
+background-image: url('./assets/username.png');
+background-size: 20px 20px; /* Adjust the image size as needed */
+  background-repeat: no-repeat;
+  background-position: 10px center; 
+box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15);
+width: 90%;
+height: 40px;
+flex-shrink: 0;
+margin-top: 30px;
+transition: border-color 0.3s; /* Add a transition for smooth animation */
+border: 1px solid transparent;
+color: #63A9D7;
+font-family: 'Open Sans';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+.signup-input:focus::placeholder {
+  color: #63A9D7; /* Change the placeholder color when the input is focused */
+}
+.signup-input:focus {
+  border-color: #63A9D7; /* Change the border color when focused */
+  outline: none;
+}

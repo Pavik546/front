@@ -1,0 +1,37 @@
+.pagination {
+    display: flex;
+    justify-content: flex-end; /* Align to the right end */
+    list-style: none;
+    padding: 0;
+    margin-right: 0px; /* Adjust the margin as needed to move it to the left */
+  }
+  
+  
+  .pagination li {
+    margin: 0 2px; /* Adjust the spacing as needed */
+  }
+  
+  .pagination a {
+    text-decoration: none;
+  }
+  
+  .page-link {
+    display: inline-block;
+    padding: 1px 5px; /* Adjust the padding to change the size of the box */
+    border: 1px solid #333; /* Border around the page numbers */
+    border-radius: 2px; /* Round the corners of the box */
+    margin: 0 1px; /* Adjust the spacing around each page number */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .page-link:hover,
+  .page-link:active,
+  .page-link:focus {
+    background-color: lightskyblue; /* Change the background color to blue on hover, active, and focus */
+    color: black; /* Change the text color to white on hover, active, and focus */
+  }
+  .label-with-select {
+    margin-right: 10px; /* Adjust the margin as needed for the desired spacing */
+  }
+  
